@@ -1,10 +1,10 @@
-public class LIBRERIA extends libro8{
+public class LIBRERIA1 {
     int cod;
     String autor;
     int anio;
-    String nombrel;
+    static String nombrel;
 
-    public LIBRERIA (int cod,String autor,String nombrel,int anio) {
+    public LIBRERIA1(int cod, String autor, String nombrel, int anio) {
         this.cod = cod;
         this.autor = autor;
         this.nombrel = nombrel;
@@ -35,7 +35,7 @@ public class LIBRERIA extends libro8{
         this.anio = anio;
     }
 
-    public String getNombrel() {
+    public static String getNombrel() {
         return nombrel;
     }
 

@@ -1,15 +1,17 @@
-public class libro2 extends libro8{
-    int cod;
-    String autor;
-    int anio;
-    String nombrel;
+public class libro2 extends LIBRERIA1 {
+    String editorial;
 
-    public libro2 (int cod,String autor,String nombrel,int anio) {
-        this.cod = cod;
-        this.autor = autor;
-        this.nombrel = nombrel;
-        this.anio = anio;
+    public libro2 (int cod,String autor,String nombrel,int anio,String editorial) {
+        super(cod,autor,nombrel,anio);
+        this.editorial=editorial;
     }
 
+    public String getEditorial() {
+        return editorial;
+    }
+
+    public void setEditorial(String editorial) {
+        this.editorial = editorial;
+    }
 }
 

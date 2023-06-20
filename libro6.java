@@ -1,15 +1,17 @@
-public class libro6 extends libro8{
-    int cod;
-    String autor;
-    int anio;
-    String nombrel;
+public class libro6 extends LIBRERIA1 {
+  int codi;
 
     public libro6 (int cod,String autor,String nombrel,int anio) {
-        this.cod = cod;
-        this.autor = autor;
-        this.nombrel = nombrel;
-        this.anio = anio;
+        super(cod,autor,nombrel,anio);
+        this.codi=codi;
     }
 
+    public int getCodi() {
+        return codi;
+    }
+
+    public void setCodi(int codi) {
+        this.codi = codi;
+    }
 }
 

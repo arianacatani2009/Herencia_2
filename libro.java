@@ -1,14 +1,15 @@
-public class libro extends LIBRERIA{
-    int cod;
-    String autor;
-    int anio;
-    String nombrel;
-
-    public libro (int cod,String autor,String nombrel,int anio) {
-        this.cod = cod;
-        this.autor = autor;
-        this.nombrel = nombrel;
-        this.anio = anio;
+public class libro extends libro6{
+    String resumen;
+    public libro (int cod,String autor,String nombrel,int anio,String resumen) {
+       super(cod,autor,nombrel,anio);
+       this.resumen=resumen;
     }
 
+    public String getResumen() {
+        return resumen;
+    }
+
+    public void setResumen(String resumen) {
+        this.resumen = resumen;
+    }
 }
